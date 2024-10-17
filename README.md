@@ -1,4 +1,4 @@
-Financiera App
+# Financiera App
 
 Bienvenido a la **Financiera App**, una aplicación desarrollada en Flutter que permite gestionar y realizar operaciones financieras de manera sencilla y eficiente. Esta aplicación está diseñada para usuarios que buscan llevar un control de sus finanzas personales o de sus negocios.
 
