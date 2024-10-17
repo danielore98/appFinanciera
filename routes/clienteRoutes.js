@@ -49,7 +49,7 @@ router.post('/login', (req, res) => {
   }
 
   const query = 'SELECT * FROM clientes WHERE email = ?';
-  
+
   // Buscar al cliente por su email
   db.query(query, [email], (err, result) => {
     if (err) {
@@ -59,7 +59,7 @@ router.post('/login', (req, res) => {
     if (result.length === 0) {
       return res.status(401).json({ message: 'Credenciales incorrectas' });
     }
-    
+
     const cliente = result[0];
 
     // Comparar la contraseña

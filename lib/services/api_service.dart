@@ -73,8 +73,16 @@ class ApiService {
 
   // Método para obtener el token JWT de SharedPreferences
   Future<String?> getToken() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    String? token = prefs.getString('jwt_token');
+    // EDITADO
+    const String manualToken =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzQGVtYWlsLmNvbSIsImlhdCI6MTcyOTEyMzk5OSwiZXhwIjoxNzI5MTMxMTk5fQ.BSEjGUOGubYIKZ10b9shOJbrn8w5oX4bF7MofBwhyXQ";
+    print("Token usualdo manualmente: $manualToken");
+
+    // CERRAR EDITADO
+
+    // SharedPreferences prefs = await SharedPreferences.getInstance();
+    // String? token = prefs.getString('jwt_token');
+    String? token = manualToken;
     print(
         "Token recuperado de SharedPreferences: $token"); // Imprimir para verificar el token
     return token;
