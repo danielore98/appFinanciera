@@ -75,7 +75,7 @@ class ApiService {
   Future<String?> getToken() async {
     // EDITADO
     const String manualToken =
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzQGVtYWlsLmNvbSIsImlhdCI6MTcyOTEyMzk5OSwiZXhwIjoxNzI5MTMxMTk5fQ.BSEjGUOGubYIKZ10b9shOJbrn8w5oX4bF7MofBwhyXQ";
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzQGVtYWlsLmNvbSIsImlhdCI6MTcyOTEzMTM4NywiZXhwIjoxNzI5MTM4NTg3fQ.W5snRTKZjw_xItdxPA93eXkeLT66_D4GOTlPYVUBmA0";
     print("Token usualdo manualmente: $manualToken");
 
     // CERRAR EDITADO
